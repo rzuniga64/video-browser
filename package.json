@@ -1,7 +1,9 @@
 {
   "name": "video-browser",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "main": "index.js",
+  "repository": "git@github.com:rzuniga64/video-browser.git",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
