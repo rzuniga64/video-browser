@@ -1,26 +1,20 @@
 import React, { Component } from 'react';
+// { Component } is the same as const Component = React.Component. It an ES6 shortcut.
 
 class SearchBar extends Component {
 
-  constructor(props) {
-    super(props);
-
-    this.state = { term: '' };
-  }
-
   render() {
-    return (
-      <div className="search-bar">
-        <input
-          value={this.state.term}
-          onChange={event => this.onInputChange(event.target.value)} />
-      </div>
+      return (
+          <div className="search-bar">
+              <input onChange={this.onInputChange} />
+          </div>
     );
   }
 
-  onInputChange(term) {
-    this.setState({term});
-    this.props.onSearchTermChange(term);
+  onInputChange(event) {
+      console.log(event.target.value);
+      //this.setState({event});
+        //this.props.onSearchTermChange(event);
   }
 }
 
