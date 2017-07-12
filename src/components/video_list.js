@@ -2,12 +2,15 @@ import React from 'react';
 import VideoListItem from './video_list_item';
 
 const VideoList = (props) => {
+
   const videoItems = props.videos.map((video) => {
     return (
       <VideoListItem
-        onVideoSelect={props.onVideoSelect}
-        key={video.etag}
-        video={video} />
+          /* Pass the call inside of props down to VideoListItem. Now VideoListItem has access to a property called
+             onVideoSelect. */
+          onVideoSelect={props.onVideoSelect}
+          key={video.etag}
+          video={video} />
     );
   });
 
