@@ -5,7 +5,7 @@ class SearchBar extends Component {
 
     constructor(props) {
         super(props);  // Component has its own constructor
-        this.state = { term: 'Starting Value' };  // initialize object and assign to this.state.
+        this.state = { term: 'Search' };  // initialize object and assign to this.state.
     }
 
     /**

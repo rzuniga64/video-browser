@@ -10,21 +10,23 @@ import React from 'react';
  */
 // video and onVideoSelect are properties on props.
 const VideoListItem = ({video, onVideoSelect}) => {
+    // const video = props.video (es6 syntax)
+    // console.log(video)
+    const imageUrl = video.snippet.thumbnails.default.url;
 
-  const imageUrl = video.snippet.thumbnails.default.url;
-
-  return (
-    <li className="list-group-item" onClick={() => onVideoSelect(video)}>
-      <div className="video-list media">
-        <div className="media-left">
-          <img className="media-object" src={imageUrl} alt="thumbnail"/>
-        </div>
-        <div className="media-body">
-          <div className="media-heading">{video.snippet.title}</div>
-        </div>
-      </div>
-    </li>
-  );
+    // return <li>Video</li>
+    return (
+        <li className="list-group-item" onClick={() => onVideoSelect(video)}>
+            <div className="video-list media">
+                <div className="media-left">
+                    <img className="media-object" src={imageUrl} alt="thumbnail"/>
+                </div>
+                <div className="media-body">
+                    <div className="media-heading">{video.snippet.title}</div>
+                </div>
+            </div>
+        </li>
+    );
 };
 
 export default VideoListItem;

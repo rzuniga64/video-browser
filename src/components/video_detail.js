@@ -7,13 +7,16 @@ import React from 'react';
  * @constructor
  */
 const VideoDetail = ({video}) => {
+    // const video = props.video (es6 syntax)
 
     // Check if video is not empty.
     if (!video) {
     return <div>Loading...</div>;
   }
 
-  const videoId = video.id.videoId;
+        // Whenever you want to embed a video or navigate to it the only thing that changes in
+        // the URL is the ID of the video. We have the ID in props.video so we can make a URL.
+        const videoId = video.id.videoId;
   // Creating an iframe that points to the url will show a youtube video player inside of our application for us.
   const url = `https://www.youtube.com/embed/${videoId}`; // use of ES6 string interpolation or template string.
 

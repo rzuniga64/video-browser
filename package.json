@@ -8,6 +8,8 @@
     "lodash": "^4.17.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "sockjs-client": "^1.1.4",
+    "webpack": "^3.4.1",
     "youtube-api-search": "0.0.5"
   },
   "devDependencies": {
