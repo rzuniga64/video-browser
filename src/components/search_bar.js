@@ -23,7 +23,7 @@ class SearchBar extends Component {
   }
 
     /**
-     * Set the state with the new term. Call the callback OnSearchTermChange that we got from App.js.
+     * Set the state with the new term. Call the callback OnSearchTermChange that we got from app.js.
      * @param newterm
      */
   onInputChange(newterm ) {
