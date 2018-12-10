@@ -76,7 +76,7 @@ class App extends Component {
                          If VideoList calls onVideoSelect with a video the selected video on App will update.
                          We are passing onVideoSelect as a property to VideoList. VideoList now has a property on props.
                          called props.onVideoSelect. */
-                        onVideoSelect={selectedVideo => this.setState({selectedVideo}) } />
+                        onVideoSelect={selectedVideo => this.setState({selectedVideo: selectedVideo}) } />
                 </div>
             </div>
         );

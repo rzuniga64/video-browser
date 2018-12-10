@@ -34,6 +34,7 @@ yarn-error.log*
 .idea/**/vcs.xml
 .idea/**/checkstyle-idea.xml
 .idea/dictionaries
+.idea/encodings.xml
 
 # Sensitive or high-churn files:
 .idea/**/dataSources/
